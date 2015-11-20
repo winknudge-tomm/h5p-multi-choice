@@ -194,5 +194,145 @@
         "optional": true
       }
     ]
+  },
+  {
+    "name": "feedbackModal",
+    "type": "group",
+    "label": "Modal style feedback",
+    "description": "These options will let you control how the feedback is displayed.",
+    "optional": true,
+    "fields": [
+      {
+        "name": "modalEnabled",
+        "type": "boolean",
+        "label": "Display feedback as modal",
+        "description": "Should the feedback be displayed as a modal?",
+        "default": false
+      },
+      {
+        "name": "feedbackModalRight",
+        "type": "group",
+        "label": "Right",
+        "description": "right stuff",
+        "optional": true,
+        "fields": [
+          {
+            "name": "image",
+            "type": "image",
+            "label": "Right Image",
+            "optional": true,
+            "description": "An optional image to display if the question is right"
+          },
+          {
+            "name": "response",
+            "type": "text",
+            "label": "Text to display if answer is right",
+            "default": "Fantastic Job",
+            "deprecated": true
+          },
+          {
+            "name": "feedbackButtons",
+            "type": "list",
+            "label": "Buttons",
+            "description": "Add Feedback Buttons",
+            "entity": "option",
+            "min": 1,
+            "defaultNum": 1,
+            "field": {
+              "name": "button",
+              "type": "group",
+              "label": "Button",
+              "fields": [
+                {
+                  "name": "text",
+                  "type": "text",
+                  "label": "Text"
+                },
+                {
+                  "name": "resetQuestion",
+                  "type": "boolean",
+                  "label": "Reset Question",
+                  "default": false
+                },
+                {
+                  "name": "link",
+                  "type": "text",
+                  "label": "Link",
+                  "optional": true
+                },
+                {
+                  "name": "slide",
+                  "type": "number",
+                  "description": "Will default to link unless left blank",
+                  "label": "Anchor To Slide Number"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "feedbackModalWrong",
+        "type": "group",
+        "label": "Wrong",
+        "description": "Wrong stuff",
+        "optional": true,
+        "fields": [
+          {
+            "name": "image",
+            "type": "image",
+            "label": "Wrong Image",
+            "optional": true,
+            "description": "An optional image to display if the question is wrong"
+          },
+          {
+            "name": "response",
+            "type": "text",
+            "label": "Text to display if answer is wrong",
+            "default": "Not Quite!",
+            "deprecated": true
+          },
+          {
+            "name": "feedbackButtons",
+            "type": "list",
+            "label": "Buttons",
+            "description": "Add Feedback Buttons",
+            "entity": "option",
+            "min": 1,
+            "defaultNum": 1,
+            "field": {
+              "name": "button",
+              "type": "group",
+              "label": "Button",
+              "fields": [
+                {
+                  "name": "text",
+                  "type": "text",
+                  "label": "Text"
+                },
+                {
+                  "name": "resetQuestion",
+                  "type": "boolean",
+                  "label": "Reset Question",
+                  "default": false
+                },
+                {
+                  "name": "link",
+                  "type": "text",
+                  "label": "Link",
+                  "optional": true
+                },
+                {
+                  "name": "slide",
+                  "type": "number",
+                  "description": "Will default to link unless left blank",
+                  "label": "Anchor To Slide Number"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -427,7 +427,9 @@ H5P.MultiChoice = function(options, contentId, contentData) {
     }
 
     // Show feedback
-    this.setFeedback(feedback, score, max);
+    var modalData = params.feedbackModal;
+    modalData.contentId = self.contentId;
+    this.setFeedback(feedback, score, max, modalData); 
 
     //Disable task if maxscore is achieved
     if (score === max) {
