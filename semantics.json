@@ -237,6 +237,7 @@
             "description": "Add Feedback Buttons",
             "entity": "option",
             "min": 1,
+            "max": 3,
             "defaultNum": 1,
             "field": {
               "name": "button",
@@ -252,6 +253,7 @@
                   "name": "resetQuestion",
                   "type": "boolean",
                   "label": "Reset Question",
+                  "optional": true,
                   "default": false
                 },
                 {
@@ -264,6 +266,7 @@
                   "name": "slide",
                   "type": "number",
                   "description": "Will default to link unless left blank",
+                  "optional": true,
                   "label": "Anchor To Slide Number"
                 }
               ]
@@ -299,6 +302,7 @@
             "description": "Add Feedback Buttons",
             "entity": "option",
             "min": 1,
+            "max": 3,
             "defaultNum": 1,
             "field": {
               "name": "button",
@@ -314,6 +318,7 @@
                   "name": "resetQuestion",
                   "type": "boolean",
                   "label": "Reset Question",
+                  "optional": true,
                   "default": false
                 },
                 {
@@ -326,6 +331,7 @@
                   "name": "slide",
                   "type": "number",
                   "description": "Will default to link unless left blank",
+                  "optional": true,
                   "label": "Anchor To Slide Number"
                 }
               ]
