@@ -231,6 +231,21 @@
             "deprecated": true
           },
           {
+            "name": "responseParagraph",
+            "type": "text",
+            "widget": "html",
+            "label": "Response Text",
+            "placeholder": "Oslo is the capital of *Norway*.",
+            "description": "Enter a short paragraph of descriptive text to display under the response text",
+            "enterMode": "p",
+            "tags": [
+              "strong",
+              "em",
+              "del",
+              "u"
+            ]
+          },
+          {
             "name": "feedbackButtons",
             "type": "list",
             "label": "Buttons",
@@ -294,6 +309,21 @@
             "label": "Text to display if answer is wrong",
             "default": "Not Quite!",
             "deprecated": true
+          },
+          {
+            "name": "responseParagraph",
+            "type": "text",
+            "widget": "html",
+            "label": "Response Text",
+            "placeholder": "Oslo is the capital of *Norway*.",
+            "description": "Enter a short paragraph of descriptive text to display under the response text",
+            "enterMode": "p",
+            "tags": [
+              "strong",
+              "em",
+              "del",
+              "u"
+            ]
           },
           {
             "name": "feedbackButtons",
