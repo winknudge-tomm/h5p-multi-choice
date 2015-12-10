@@ -348,7 +348,6 @@ H5P.MultiChoice = function(options, contentId, contentData) {
    * @private
    */
   var addButtons = function () {
-    console.log(params.buttonPosition);
     // Show solution button
     self.addButton('show-solution', params.UI.showSolutionButton, function () {
       calcScore();
@@ -390,8 +389,6 @@ H5P.MultiChoice = function(options, contentId, contentData) {
       removeSelections();
       enableInput();
     }, false, params.buttonPosition);
-
-    console.log("move buttons here");
   };
 
 
