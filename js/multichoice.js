@@ -348,13 +348,14 @@ H5P.MultiChoice = function(options, contentId, contentData) {
    * @private
    */
   var addButtons = function () {
+    console.log(params.buttonPosition);
     // Show solution button
     self.addButton('show-solution', params.UI.showSolutionButton, function () {
       calcScore();
       if (self.getAnswerGiven()) {
         self.showAllSolutions();
       }
-    }, false);
+    }, false, params.buttonPosition);
 
     // Check solution button
     self.addButton('check-answer', params.UI.checkAnswerButton, function () {
@@ -378,7 +379,7 @@ H5P.MultiChoice = function(options, contentId, contentData) {
       addQuestionToXAPI(xAPIEvent);
       addResponseToXAPI(xAPIEvent);
       self.trigger(xAPIEvent);
-    });
+    }, true, params.buttonPosition);
 
     // Try Again button
     self.addButton('try-again', params.UI.tryAgainButton, function () {
@@ -388,7 +389,9 @@ H5P.MultiChoice = function(options, contentId, contentData) {
       self.hideSolutions();
       removeSelections();
       enableInput();
-    }, false);
+    }, false, params.buttonPosition);
+
+    console.log("move buttons here");
   };
 
 
